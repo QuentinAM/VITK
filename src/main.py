@@ -54,10 +54,10 @@ if __name__ == "__main__":
     print_image_info("Base Image Difference", base_image_diff)
 
     print_image_info("\nRigid Image Difference", rigid_image_diff)
-    print("\nTime taken for rigid registration: {time_rigide}ms")
+    print(f"\nTime taken for rigid registration: {round(time_rigide, 2)}s")
     
     print_image_info("\nAffine Image Difference", affine_image_diff)
-    print("\nTime taken for affine registration: {time_affine}ms")
+    print(f"\nTime taken for affine registration: {round(time_affine, 2)}s")
 
     # ########### Segmentation ###########
 
@@ -92,4 +92,4 @@ if __name__ == "__main__":
         visualize_image_difference(segmented_image_1, segmented_image_2, 50)
 
     end = time.time()
-    print(f"Total time taken: {end - start}ms")
+    print(f"Total time taken: {round(end - start, 2)}s")

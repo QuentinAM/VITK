@@ -1,2 +1,5 @@
 itk==5.4.0
 vtk==9.3.1
+itkwidgets==0.32.6
+matplotlib==3.9.0
+numpy==1.26.4
